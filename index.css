@@ -1,0 +1,12 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+#text {
+    text-align: center;
+    border: 3px solid green;
+}
+
+#data, #luogo {
+    text-align: center;
+}
