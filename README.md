@@ -10,7 +10,8 @@ prevede sempre l'utilizzo di AJAX ma si serve dei dati contenuti in un file XML 
 
 ## Istruzioni
 
-Seguire queste istruzioni per ottenere una copia del progetto.
+Se l'intenzione è quella di apportare modifiche a questo progetto, seguire queste istruzioni per ottenerne una copia.
+Altrimenti saltare direttamente alla sezione *Esecuzione*. 
 
 ### Prerequisiti
 
@@ -62,9 +63,11 @@ Infine bisogna aggiungere il file `catasto.xml` nella seguente directory:
 ...\APP\platforms\android\app\src\main\assets\www\
 ```
 
-### Esecuzione
+## Esecuzione
 Per provare l'applicazione sul proprio dispositivo basta collegarlo tramite USB al computer, premere il tasto
-Run in alto, selezionare il dispositivo (il quale deve avere il Debug USB abilitato) e premere OK.
+Run nella barra in alto di *Android Studio*, selezionare il dispositivo (il quale deve avere il Debug USB abilitato) e premere OK.
+
+In alternativa, è possibile scaricare direttamente da questo repository il file APK per installarlo sul proprio dispositivo.
 
 ## Conoscenze utilizzate
 
