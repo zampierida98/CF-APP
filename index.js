@@ -47,7 +47,8 @@ function calcolaComune(xml, mioCodice) {
 		var codice = x[i].getElementsByTagName("CODICE")[0].childNodes[0].nodeValue;
 		if (codice == mioCodice) {
 			var comune = x[i].getElementsByTagName("COMUNE")[0].childNodes[0].nodeValue;
-			$('#luogo').html("Luogo di nascita: " + comune);
+			var provincia = x[i].getElementsByTagName("PROVINCIA")[0].childNodes[0].nodeValue;
+			$('#luogo').html("Luogo di nascita: " + comune + " (" + provincia + ")");
 		}
 	}
 }
@@ -71,11 +72,13 @@ var app = {
 						
 						// elaborazione sesso e data:
 						var giorno = parseInt(resultStr.substr(9,2));
-						if (giorno > 40)
+						if (giorno > 40) {
 						    $('#sesso').html("Sesso: femminile");
-						else
+							giorno = giorno - 40;
+						} else {
 						    $('#sesso').html("Sesso: maschile");
-
+						}
+						
 						var meseStr = resultStr.substr(8,1);
 						var mese = calcolaMese(meseStr);
 						var anno = "19" + resultStr.substr(6,2);
