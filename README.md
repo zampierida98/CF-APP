@@ -2,7 +2,7 @@
 
 Applicazione Android che scansiona il codice a barre presente sulla tessera sanitaria sviluppata per il
 colloquio orale dell'esame di Stato sostenuto al termine del percorso di studi in Informatica presso l'[ITIS
-G. Marconi](https://www.marconiverona.gov.it/portal/) di Verona (2012-2017).
+G. Marconi](https://www.marconiverona.edu.it/pvw/app/VRIT0007/pvw_sito.php) di Verona (2012-2017).
 
 *Nota*: la prima versione di questa applicazione comunicava tramite chiamata AJAX con un server Flask
 (framework Web leggero scritto in Python) ospitato sulla piattaforma OpenShift; questa versione invece
